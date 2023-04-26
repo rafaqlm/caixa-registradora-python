@@ -101,6 +101,9 @@ def formaPagamento(total):
             total -= desconto
             print("O metodo de pagamento escolhido foi PIX")
             print("O valor total a pagar é de R${}".format(total))
+        elif escolha == "5":
+            pagamentoFlag = False
+            return
         else:
             print("Comando incorreto, favor responder com base no menu'")
     while confirmacaoFlag:
